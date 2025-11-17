@@ -13,7 +13,12 @@
 <body>
   <header>
     <h1>The Age of Surveillance Capitalism</h1>
-    <nav>
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <nav id="nav"> 
       <a href="index.html">Home</a>
       <a href="what-it-is.html">What It Is</a>
       <a href="behavioral-surplus.html">Behavioral Surplus</a>
@@ -43,5 +48,31 @@
     <p> 2025 project for Cart 211 | Built for educational use</p>
     </small>
   </footer>
+    <script>
+    const hamburger = document.getElementById('hamburger');
+    const nav = document.getElementById('nav');
+    
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      nav.classList.toggle('active');
+    });
+    
+    // Close menu when a link is clicked
+    const navLinks = nav.querySelectorAll('a');
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        nav.classList.remove('active');
+      });
+    });
+    
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+      if (!hamburger.contains(e.target) && !nav.contains(e.target)) {
+        hamburger.classList.remove('active');
+        nav.classList.remove('active');
+      }
+    });
+  </script>
 </body>
 </html>
