@@ -1473,3 +1473,155 @@ nav.active {
       font-size: 1.3em;
       margin-bottom: 10px;
     }
+
+    .resource-category {
+      margin: 40px 0;
+    }
+
+    .resource-category h3 {
+      color: #66fcf1;
+      font-size: 1.6em;
+      margin-bottom: 25px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #66fcf1;
+    }
+
+    .resource-card {
+      background: #1f2833;
+      border-left: 4px solid #66fcf1;
+      padding: 25px;
+      margin: 20px 0;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .resource-card:hover {
+      transform: translateX(8px);
+      box-shadow: -5px 5px 25px rgba(102, 252, 241, 0.3);
+      background: #252e3a;
+    }
+
+    .resource-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+
+    .resource-title {
+      color: #66fcf1;
+      font-size: 1.3em;
+      font-weight: bold;
+    }
+
+    .resource-icon {
+      font-size: 2em;
+    }
+
+    .resource-meta {
+      color: #fc9966;
+      font-size: 0.9em;
+      margin-bottom: 12px;
+    }
+
+    .tool-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      margin: 30px 0;
+    }
+
+    .tool-box {
+      background: #1f2833;
+      border: 2px solid #66fc66;
+      padding: 25px;
+      border-radius: 10px;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+
+    .tool-box:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 30px rgba(102, 252, 102, 0.3);
+      border-color: #66fcf1;
+    }
+
+    .tool-box h4 {
+      color: #66fc66;
+      margin: 15px 0;
+      font-size: 1.3em;
+    }
+
+    .tool-box .tool-icon {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+
+    .org-card {
+      background: linear-gradient(135deg, #1f2833, #1a2a2a);
+      border: 2px solid #66fcf1;
+      padding: 30px;
+      margin: 25px 0;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+    }
+
+    .org-card:hover {
+      transform: scale(1.02);
+      box-shadow: 0 10px 35px rgba(102, 252, 241, 0.4);
+    }
+
+    .org-card h4 {
+      color: #66fcf1;
+      font-size: 1.5em;
+      margin-bottom: 15px;
+    }
+
+    .credits-section {
+      background: linear-gradient(135deg, #1f2833, #2a2020);
+      border: 3px solid #fc9966;
+      border-radius: 10px;
+      padding: 40px;
+      margin: 50px 0;
+      text-align: center;
+    }
+
+    .credits-section h3 {
+      color: #fc9966;
+      font-size: 1.8em;
+      margin-bottom: 25px;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #2a3542;
+      color: #66fcf1;
+      padding: 6px 15px;
+      border-radius: 15px;
+      margin: 5px;
+      font-size: 0.85em;
+      border: 1px solid #66fcf1;
+    }
+
+    .recommended-badge {
+      display: inline-block;
+      background: #66fc66;
+      color: #0b0c10;
+      padding: 5px 12px;
+      border-radius: 12px;
+      font-size: 0.75em;
+      font-weight: bold;
+      margin-left: 10px;
+    }
+
+    .quote-highlight {
+      background: #1f2833;
+      border-left: 5px solid #66fcf1;
+      padding: 25px;
+      margin: 25px 0;
+      font-style: italic;
+      border-radius: 5px;
+      font-size: 1.1em;
+      line-height: 1.7;
+    }
