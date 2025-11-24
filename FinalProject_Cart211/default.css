@@ -170,3 +170,122 @@ nav.active {
     transform: rotate(45deg) translate(-5px, -6px);
   }
 }
+ .flip-card {
+      background-color: transparent;
+      width: 100%;
+      height: 250px;
+      perspective: 1000px;
+      margin: 20px 0;
+    }
+
+    .flip-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.6s;
+      transform-style: preserve-3d;
+    }
+
+    .flip-card:hover .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+
+    .flip-card-front, .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 30px;
+      border: 2px solid #66fcf1;
+      background: #1f2833;
+      border-radius: 10px;
+    }
+
+    .flip-card-back {
+      transform: rotateY(180deg);
+      background: #2a3542;
+    }
+
+    .flip-card-front h3, .flip-card-back h3 {
+      color: #66fcf1;
+      margin-bottom: 15px;
+    }
+
+    .data-flow {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 40px 0;
+      position: relative;
+      padding: 20px 0;
+    }
+
+    .data-flow::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, #66fcf1, transparent);
+    }
+
+    .data-point-flow {
+      width: 15px;
+      height: 15px;
+      background: #66fcf1;
+      border-radius: 50%;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      animation: dataMoving 4s linear infinite;
+      box-shadow: 0 0 10px #66fcf1;
+    }
+
+    @keyframes dataMoving {
+      0% { left: 5%; opacity: 0; }
+      10% { opacity: 1; }
+      90% { opacity: 1; }
+      100% { left: 95%; opacity: 0; }
+    }
+
+    .flow-node {
+      padding: 20px 30px;
+      background: #1f2833;
+      border: 2px solid #66fcf1;
+      border-radius: 8px;
+      z-index: 1;
+      position: relative;
+      font-weight: bold;
+      color: #66fcf1;
+      min-width: 120px;
+      text-align: center;
+    }
+
+    .profit-stat {
+      font-size: 3em;
+      color: #66fcf1;
+      font-weight: bold;
+      text-align: center;
+      margin: 30px 0;
+      position: relative;
+      animation: countUp 2s ease-out;
+    }
+
+    @keyframes countUp {
+      0% { opacity: 0; transform: scale(0.5); }
+      100% { opacity: 1; transform: scale(1); }
+    }
+
+    .stat-label {
+      display: block;
+      font-size: 0.4em;
+      color: #c5c6c7;
+      margin-top: 10px;
+    }
