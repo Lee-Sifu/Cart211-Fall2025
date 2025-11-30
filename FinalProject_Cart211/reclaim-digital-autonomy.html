@@ -5,14 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Our Data, Their Profit | Home</title>
   <link rel="stylesheet" href="default.css">
+  <!-- Google Fonts: Decorative header font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap" rel="stylesheet">
+  <!-- Font Awesome: Icon library -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+  <!-- Header with site title and navigation -->
   <header>
     <h1>The Age of Surveillance Capitalism</h1>
+    <!-- Navigation menu -->
     <nav>
       <a href="index.html">Home</a>
       <a href="what-it-is.html">What It Is</a>
@@ -26,233 +30,304 @@
       <a href="resources-credits.html">Resources & Credits</a>
     </nav>
   </header>
-   <div class="container">
+
+  <!-- Main content container -->
+  <div class="container">
+    <!-- Page title -->
     <h2>Reclaim Your Digital Autonomy</h2>
-    <p>You can't completely escape surveillance capitalism while using the internet, but you can significantly reduce your exposure. Here are practical steps organized by difficulty level.</p>
+    <!-- Page introduction -->
+    <p>While the problem is systemic, individual actions matter. Here are concrete, practical steps you can take today to reduce your digital footprint, protect your data, and reclaim your autonomy.</p>
 
-    <div class="privacy-score">
-      <h3 style="color: #66fcf1;">Your Current Privacy Protection</h3>
-      <div class="protection-meter">
-        <div class="protection-level" id="protectionLevel" style="width: 15%;">15% Protected</div>
-      </div>
-      <p style="margin-top: 20px; color: #c5c6c7;">Average internet user starts here. Let's improve it.</p>
+    <!-- Protection meter showing progress -->
+    <div class="protection-meter">
+      <div class="protection-level" style="width: 15%;">15% Protected</div>
     </div>
 
-    <div class="action-level">
-      <span class="level-badge level-easy">🟢 EASY - Start Here (30 minutes)</span>
-      <h3 style="color: #66fcf1; margin: 15px 0;">Quick Wins for Immediate Privacy Improvement</h3>
-      
-      <ul class="checklist">
-        <li>Switch to Firefox or Brave browser (better privacy than Chrome)</li>
-        <li>Install uBlock Origin extension (blocks trackers and ads)</li>
-        <li>Switch default search engine to DuckDuckGo or Startpage</li>
-        <li>Review and limit app permissions on your phone</li>
-        <li>Turn off ad personalization in Google and Facebook settings</li>
-        <li>Use incognito/private mode for sensitive searches</li>
-        <li>Clear cookies regularly or set browser to auto-delete</li>
+    <!-- Section: Immediate Actions -->
+    <h3 class="section-title">Immediate Actions (Do These Today)</h3>
+
+    <!-- Action 1: Change privacy settings -->
+    <div class="tool-box">
+      <div class="tool-icon">⚙️</div>
+      <h4>1. Change Privacy Settings Everywhere</h4>
+      <p><strong>Facebook/Instagram:</strong> Privacy → Audience → Change to "Friends Only"</p>
+      <p><strong>Google:</strong> myaccount.google.com → Privacy → Activity Controls → Turn off</p>
+      <p><strong>Twitter/X:</strong> Privacy and safety → Make account private</p>
+      <p><strong>Time required:</strong> 30 minutes</p>
+    </div>
+
+    <!-- Action 2: Delete tracking cookies -->
+    <div class="tool-box">
+      <div class="tool-icon">🍪</div>
+      <h4>2. Clear Cookies and Browsing History</h4>
+      <p><strong>Chrome:</strong> Settings → Privacy and security → Clear browsing data → Select "Cookies" and "Cached images"</p>
+      <p><strong>Firefox:</strong> Preferences → Privacy & Security → Cookies and Site Data → Clear Data</p>
+      <p><strong>Safari:</strong> Preferences → Privacy → Manage Website Data → Remove All</p>
+      <p><strong>Important:</strong> Do this regularly (weekly or monthly)</p>
+      <p><strong>Time required:</strong> 5 minutes</p>
+    </div>
+
+    <!-- Action 3: Disable location tracking -->
+    <div class="tool-box">
+      <div class="tool-icon">📍</div>
+      <h4>3. Disable Location Services</h4>
+      <p><strong>iPhone:</strong> Settings → Privacy → Location Services → Toggle OFF (or set to "While Using")</p>
+      <p><strong>Android:</strong> Settings → Location → Turn OFF (or use app-specific permissions)</p>
+      <p><strong>Google Timeline:</strong> myaccount.google.com → Location History → Turn OFF</p>
+      <p><strong>Time required:</strong> 5 minutes</p>
+    </div>
+
+    <!-- Action 4: Review app permissions -->
+    <div class="tool-box">
+      <div class="tool-icon">📱</div>
+      <h4>4. Review App Permissions</h4>
+      <p><strong>iPhone:</strong> Settings → Apps → Check which apps have access to Camera, Microphone, Location, Photos, Contacts</p>
+      <p><strong>Android:</strong> Settings → Apps → App Permissions → Review access</p>
+      <p><strong>Delete or restrict:</strong> Apps that ask for excessive permissions they don't need</p>
+      <p><strong>Time required:</strong> 15 minutes</p>
+    </div>
+
+    <!-- Section: Browser-Level Protection -->
+    <h3 class="section-title">Browser-Level Protection</h3>
+
+    <!-- Browser recommendation 1 -->
+    <div class="tool-box">
+      <div class="tool-icon">🛡️</div>
+      <h4>Install uBlock Origin</h4>
+      <p><strong>What it does:</strong> Blocks third-party trackers and ad networks</p>
+      <p><strong>Install on:</strong> Chrome, Firefox, Safari</p>
+      <p><strong>Cost:</strong> Free</p>
+      <p><strong>Impact:</strong> Significantly reduces tracking, blocks malware ads</p>
+    </div>
+
+    <!-- Browser recommendation 2 -->
+    <div class="tool-box">
+      <div class="tool-icon">👁️</div>
+      <h4>Install Privacy Badger</h4>
+      <p><strong>What it does:</strong> Learns which trackers are following you and blocks them</p>
+      <p><strong>Install on:</strong> Chrome, Firefox</p>
+      <p><strong>Cost:</strong> Free</p>
+      <p><strong>Impact:</strong> Smart tracking prevention, actively learns from your browsing</p>
+    </div>
+
+    <!-- Browser recommendation 3 -->
+    <div class="tool-box">
+      <div class="tool-icon">🔐</div>
+      <h4>Switch to Privacy-Focused Browser</h4>
+      <p><strong>Options:</strong></p>
+      <ul style="margin-top: 10px;">
+        <li><strong>Firefox:</strong> Built-in tracking protection, no data collection by default</li>
+        <li><strong>Brave:</strong> Blocks ads and trackers by default, built-in VPN option</li>
+        <li><strong>DuckDuckGo:</strong> Doesn't track searches, open-source privacy</li>
       </ul>
-
-      <p style="margin-top: 20px; color: #66fc66;"><strong>Impact:</strong> Blocks 60-70% of common trackers immediately. Minimal effort, significant gain.</p>
+      <p><strong>Impact:</strong> Fundamental reduction in tracking from the browser level</p>
     </div>
 
-    <h3 style="color: #66fcf1; margin: 40px 0 30px 0; text-align: center;">Essential Privacy Tools</h3>
+    <!-- Section: Email & Accounts -->
+    <h3 class="section-title">Email & Account Management</h3>
 
-    <div class="tool-card">
-      <div class="tool-header">
-        <span class="tool-name">uBlock Origin</span>
-        <span class="tool-icon">🛡️</span>
-      </div>
-      <p><strong>What it does:</strong> Blocks ads, trackers, and malware. More powerful than standard ad blockers.</p>
-      <p><strong>Why it matters:</strong> Stops most third-party tracking scripts from loading. Speeds up browsing, saves bandwidth.</p>
-      <p><strong>Get it:</strong> Free browser extension for Firefox, Chrome, Edge</p>
-    </div>
-
-    <div class="tool-card">
-      <div class="tool-header">
-        <span class="tool-name">Privacy Badger</span>
-        <span class="tool-icon">🦡</span>
-      </div>
-      <p><strong>What it does:</strong> Learns which trackers follow you and automatically blocks them.</p>
-      <p><strong>Why it matters:</strong> Catches trackers that hide from traditional blockers. Made by EFF (Electronic Frontier Foundation).</p>
-      <p><strong>Get it:</strong> Free browser extension from privacybadger.org</p>
-    </div>
-
-    <div class="tool-card">
-      <div class="tool-header">
-        <span class="tool-name">DuckDuckGo</span>
-        <span class="tool-icon">🦆</span>
-      </div>
-      <p><strong>What it does:</strong> Search engine that doesn't track you or create filter bubbles.</p>
-      <p><strong>Why it matters:</strong> Google logs every search and uses it to build your profile. DuckDuckGo doesn't.</p>
-      <p><strong>Get it:</strong> duckduckgo.com - Set as default search engine</p>
-    </div>
-
-    <div class="action-level">
-      <span class="level-badge level-medium">🟡 MEDIUM - Worth the Effort (1-2 hours)</span>
-      <h3 style="color: #66fcf1; margin: 15px 0;">Stronger Protection for Motivated Users</h3>
-      
-      <ul class="checklist">
-        <li>Use a VPN (Virtual Private Network) for all browsing - try ProtonVPN or Mullvad</li>
-        <li>Switch to Signal for messaging (end-to-end encrypted by default)</li>
-        <li>Use ProtonMail or Tutanota for email (encrypted email services)</li>
-        <li>Install a privacy-focused operating system on phone (LineageOS, GrapheneOS for advanced users)</li>
-        <li>Use password manager (Bitwarden, 1Password) with unique passwords for every site</li>
-        <li>Enable two-factor authentication (2FA) everywhere possible</li>
-        <li>Delete unused accounts and request data deletion under GDPR/CCPA</li>
-        <li>Audit your Google and Facebook data downloads to see what they have</li>
+    <!-- Email recommendation -->
+    <div class="tool-box">
+      <div class="tool-icon">✉️</div>
+      <h4>Switch to Privacy-Focused Email</h4>
+      <p><strong>Options:</strong></p>
+      <ul style="margin-top: 10px;">
+        <li><strong>ProtonMail:</strong> End-to-end encrypted, based in Switzerland (strong privacy laws)</li>
+        <li><strong>Tutanota:</strong> Encrypted by default, open-source</li>
+        <li><strong>Hey.com:</strong> Blocks trackers in emails, paid service ($99/year)</li>
       </ul>
-
-      <p style="margin-top: 20px; color: #fcfc66;"><strong>Impact:</strong> Significantly reduces corporate surveillance. Your ISP and apps can still track you, but much less data leaks.</p>
+      <p><strong>Why:</strong> Gmail scans your emails for behavioral data. Switching protects your communications.</p>
     </div>
 
-    <h3 style="color: #66fcf1; margin: 40px 0 30px 0; text-align: center;">Search Engine Comparison</h3>
-
-    <table class="comparison-table">
-      <thead>
-        <tr>
-          <th>Feature</th>
-          <th>Google</th>
-          <th>DuckDuckGo</th>
-          <th>Startpage</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><strong>Tracks Searches</strong></td>
-          <td class="cross">✗</td>
-          <td class="check">✓ None</td>
-          <td class="check">✓ None</td>
-        </tr>
-        <tr>
-          <td><strong>Builds Profile</strong></td>
-          <td class="cross">✗</td>
-          <td class="check">✓ No</td>
-          <td class="check">✓ No</td>
-        </tr>
-        <tr>
-          <td><strong>Filter Bubble</strong></td>
-          <td class="cross">✗</td>
-          <td class="check">✓ None</td>
-          <td class="check">✓ None</td>
-        </tr>
-        <tr>
-          <td><strong>Sells Your Data</strong></td>
-          <td class="cross">✗</td>
-          <td class="check">✓ No</td>
-          <td class="check">✓ No</td>
-        </tr>
-        <tr>
-          <td><strong>Search Quality</strong></td>
-          <td class="check">✓ Excellent</td>
-          <td class="check">✓ Good</td>
-          <td class="check">✓ Uses Google results anonymously</td>
-        </tr>
-      </tbody>
-    </table>
-
-    <div class="action-level">
-      <span class="level-badge level-hard">🔴 ADVANCED - Maximum Privacy (Ongoing commitment)</span>
-      <h3 style="color: #66fcf1; margin: 15px 0;">For Those Serious About Digital Freedom</h3>
-      
-      <ul class="checklist">
-        <li>Use Tor Browser for anonymous browsing (routes traffic through multiple nodes)</li>
-        <li>Run your own VPN server or use privacy-focused hosting</li>
-        <li>De-Google your life completely - migrate all services</li>
-        <li>Use Linux operating system instead of Windows or macOS</li>
-        <li>Pay with cryptocurrency or privacy-focused payment methods</li>
-        <li>Use separate devices for different activities (compartmentalization)</li>
-        <li>Regularly audit your digital footprint and request deletions</li>
-        <li>Support privacy legislation and digital rights organizations</li>
-        <li>Educate others about surveillance capitalism</li>
-      </ul>
-
-      <p style="margin-top: 20px; color: #fc9966;"><strong>Impact:</strong> Near-maximum privacy. Requires lifestyle changes and ongoing maintenance. Not for everyone, but available for those who need it.</p>
+    <!-- Password manager recommendation -->
+    <div class="tool-box">
+      <div class="tool-icon">🔑</div>
+      <h4>Use a Password Manager</h4>
+      <p><strong>Options:</strong> Bitwarden (free, open-source), 1Password, KeePass</p>
+      <p><strong>Benefits:</strong> Create unique passwords for every site, harder to track across sites</p>
+      <p><strong>Important:</strong> Avoid LastPass (had data breaches)</p>
     </div>
 
-    <div class="warning-box">
-      <h4>⚠️ Important Reality Check</h4>
-      <p>Perfect privacy doesn't exist. Even with all these tools:</p>
-      <ul style="margin-top: 10px; line-height: 1.8;">
-        <li>Your ISP can still see your traffic (VPN helps but isn't perfect)</li>
-        <li>If you use Google/Meta services, they'll still track you on their platforms</li>
-        <li>Phone carriers track your location</li>
-        <li>Data brokers may already have years of your data</li>
-        <li>Government surveillance operates at a different level</li>
-      </ul>
-      <p style="margin-top: 15px;"><strong>Goal:</strong> Reduce your surveillance footprint and make tracking expensive. Force them to work for it.</p>
+    <!-- Two-factor authentication -->
+    <div class="tool-box">
+      <div class="tool-icon">📲</div>
+      <h4>Enable Two-Factor Authentication (2FA)</h4>
+      <p><strong>How:</strong> Account Settings → Security → Enable 2FA</p>
+      <p><strong>Use:</strong> Authenticator app (Authy, Google Authenticator) rather than SMS when possible</p>
+      <p><strong>Accounts:</strong> Email, social media, banking, any important account</p>
     </div>
 
-    <h3 style="color: #66fcf1; margin: 40px 0 30px 0;">Your Legal Rights</h3>
+    <!-- Section: Advanced Protection -->
+    <h3 class="section-title">Advanced Protection (More Technical)</h3>
 
-    <div class="difficulty-grid">
-      <div class="tool-card">
-        <h4 style="color: #66fcf1; margin-bottom: 15px;">🇪🇺 GDPR (Europe)</h4>
-        <p><strong>Your rights:</strong></p>
-        <ul style="margin: 10px 0; line-height: 1.8;">
-          <li>Right to access your data</li>
-          <li>Right to deletion ("right to be forgotten")</li>
-          <li>Right to data portability</li>
-          <li>Right to object to processing</li>
-        </ul>
-        <p style="margin-top: 15px;"><strong>How to use it:</strong> Email companies directly requesting data deletion under GDPR Article 17.</p>
-      </div>
-
-      <div class="tool-card">
-        <h4 style="color: #66fcf1; margin-bottom: 15px;">🇺🇸 CCPA (California)</h4>
-        <p><strong>Your rights:</strong></p>
-        <ul style="margin: 10px 0; line-height: 1.8;">
-          <li>Right to know what data is collected</li>
-          <li>Right to delete personal information</li>
-          <li>Right to opt out of data sales</li>
-          <li>Right to non-discrimination</li>
-        </ul>
-        <p style="margin-top: 15px;"><strong>How to use it:</strong> Look for "Do Not Sell My Personal Information" links on websites.</p>
-      </div>
+    <!-- VPN recommendation -->
+    <div class="tool-box">
+      <div class="tool-icon">🌐</div>
+      <h4>Use a VPN</h4>
+      <p><strong>What it does:</strong> Encrypts your traffic and hides your IP address from websites and ISPs</p>
+      <p><strong>Recommended:</strong> Mullvad, ProtonVPN, IVPN</p>
+      <p><strong>Cost:</strong> Most charge $5-10/month</p>
+      <p><strong>Important:</strong> Avoid free VPNs (they sell your data to pay the bills)</p>
     </div>
 
-    <h3 style="color: #66fcf1; margin: 40px 0 30px 0; text-align: center;">Apps to Audit & Delete</h3>
+    <!-- DNS privacy -->
+    <div class="tool-box">
+      <div class="tool-icon">🔍</div>
+      <h4>Change Your DNS Provider</h4>
+      <p><strong>What it does:</strong> Prevents ISP from seeing which websites you visit</p>
+      <p><strong>Options:</strong> Quad9, NextDNS, or your VPN provider's DNS</p>
+      <p><strong>How:</strong> Router settings or OS network settings</p>
+      <p><strong>Impact:</strong> ISP can't see your browsing history</p>
+    </div>
 
-    <div class="tool-card" style="border-color: #fc6666;">
-      <h4 style="color: #fc6666; margin-bottom: 15px;">High-Risk Apps (Consider Deleting)</h4>
-      <ul style="line-height: 1.8;">
-        <li><strong>TikTok:</strong> Extreme data collection, potential foreign surveillance</li>
-        <li><strong>Facebook App:</strong> Tracks even when closed, uses microphone. Use browser instead.</li>
-        <li><strong>Most free VPN apps:</strong> They're free because they sell your data</li>
-        <li><strong>Flashlight apps:</strong> No reason to need location/contacts for a flashlight</li>
-        <li><strong>Period tracking apps (non-encrypted):</strong> Sell health data to brokers</li>
-        <li><strong>Free games with excessive permissions:</strong> Why does Candy Crush need your contacts?</li>
+    <!-- Linux section -->
+    <div class="tool-box">
+      <div class="tool-icon">🐧</div>
+      <h4>Consider Linux</h4>
+      <p><strong>What it is:</strong> Free, open-source operating system that doesn't collect your data</p>
+      <p><strong>Recommended distros:</strong> Ubuntu, Fedora, or Debian for beginners</p>
+      <p><strong>Impact:</strong> Eliminate surveillance from your OS level</p>
+      <p><strong>Barrier:</strong> Steeper learning curve, but worth it</p>
+    </div>
+
+    <!-- Section: Behavioral Changes -->
+    <h3 class="section-title">Behavioral Changes</h3>
+
+    <!-- Behavior 1: Limit social media -->
+    <div class="impact-card">
+      <div class="impact-icon">📵</div>
+      <h3>Reduce Social Media Use</h3>
+      <p>Delete Facebook, Instagram, TikTok, or set strict limits on usage. These platforms are built on behavioral surplus extraction.</p>
+      <p><strong>Alternative:</strong> Use mastodon.social or Bluesky (decentralized social networks with no behavioral data extraction)</p>
+    </div>
+
+    <!-- Behavior 2: Search privately -->
+    <div class="impact-card">
+      <div class="impact-icon">🔎</div>
+      <h3>Use Privacy-Focused Search Engines</h3>
+      <p><strong>Options:</strong> DuckDuckGo, Startpage, Searx</p>
+      <p><strong>Benefit:</strong> Your searches aren't tracked and stored in a profile about you</p>
+      <p><strong>Trade-off:</strong> Results may be slightly less personalized (which is good!)</p>
+    </div>
+
+    <!-- Behavior 3: Minimize third-party services -->
+    <div class="impact-card">
+      <div class="impact-icon">🚫</div>
+      <h3>Avoid "Sign in With Google/Facebook"</h3>
+      <p>Every time you use these services to sign into other apps, you're giving them behavioral data about your activity across the web.</p>
+      <p><strong>Alternative:</strong> Create separate accounts on each service</p>
+    </div>
+
+    <!-- Behavior 4: Be mindful of what you share -->
+    <div class="impact-card">
+      <div class="impact-icon">🤐</div>
+      <h3>Minimize Personal Information Shared Online</h3>
+      <p>Every detail you post contributes to your behavioral profile. Think twice before sharing:</p>
+      <ul style="margin-top: 10px;">
+        <li>Photos (facial recognition)</li>
+        <li>Location tags</li>
+        <li>Relationship status</li>
+        <li>Religious/political beliefs</li>
+        <li>Health information</li>
       </ul>
     </div>
 
-    <div style="background: #1f2833; border: 3px solid #66fcf1; border-radius: 10px; padding: 30px; margin: 40px 0; text-align: center;">
-      <h3 style="color: #66fcf1; margin-bottom: 20px;">The Most Important Step</h3>
-      <p style="font-size: 1.2em; line-height: 1.8;">
-        <strong>Digital minimalism:</strong> The less you share, the less they can take.<br>
-        The fewer services you use, the smaller your attack surface.<br>
-        The more conscious your choices, the more control you have.
-      </p>
-      <p style="margin-top: 25px; color: #66fcf1; font-size: 1.1em;">
-        <strong>Start with one change today. Build from there.</strong>
-      </p>
+    <!-- Section: Know Your Rights -->
+    <h3 class="section-title">Know Your Rights</h3>
+
+    <!-- GDPR section -->
+    <div class="tool-box">
+      <div class="tool-icon">⚖️</div>
+      <h4>GDPR (Europe)</h4>
+      <p>If you live in the EU, you have the right to:</p>
+      <ul style="margin-top: 10px;">
+        <li>Know what data companies collect about you</li>
+        <li>Request a copy of your data (Data Subject Access Request)</li>
+        <li>Delete your data (Right to be Forgotten)</li>
+        <li>Opt-out of data selling</li>
+      </ul>
+      <p><strong>Action:</strong> Send a DSAR to any company. They must respond in 30 days.</p>
+    </div>
+
+    <!-- CCPA section -->
+    <div class="tool-box">
+      <div class="tool-icon">⚖️</div>
+      <h4>CCPA (California)</h4>
+      <p>If you live in California, you have the right to:</p>
+      <ul style="margin-top: 10px;">
+        <li>Know what data is collected</li>
+        <li>Delete your personal information</li>
+        <li>Opt-out of the sale of your data</li>
+      </ul>
+      <p><strong>Action:</strong> Use privacy.ca.gov to submit requests</p>
+    </div>
+
+    <!-- Section: Advocacy -->
+    <h3 class="section-title">Systemic Change Requires Advocacy</h3>
+
+    <!-- Advocacy action 1 -->
+    <div class="resource-card">
+      <div class="resource-header">
+        <span class="resource-title">Support Privacy Organizations</span>
+        <span class="resource-icon">🤝</span>
+      </div>
+      <p>Organizations like the Electronic Frontier Foundation (EFF), Center for Democracy & Technology (CDT), and Mozilla Foundation are fighting for digital rights.</p>
+      <p>Donate, volunteer, or sign petitions to support their work.</p>
+    </div>
+
+    <!-- Advocacy action 2 -->
+    <div class="resource-card">
+      <div class="resource-header">
+        <span class="resource-title">Demand Better Laws</span>
+        <span class="resource-icon">📝</span>
+      </div>
+      <p>Contact your elected representatives and demand stronger privacy laws, regulation of data brokers, and accountability for surveillance capitalism.</p>
+      <p>Write to your senators, representatives, and local officials.</p>
+    </div>
+
+    <!-- Advocacy action 3 -->
+    <div class="resource-card">
+      <div class="resource-header">
+        <span class="resource-title">Educate Others</span>
+        <span class="resource-icon">📚</span>
+      </div>
+      <p>Share this website with friends, family, and colleagues. Talk about surveillance capitalism. Make it visible.</p>
+      <p>The problem thrives in darkness. Visibility is the first step to change.</p>
+    </div>
+
+    <!-- Section: Summary -->
+    <h3 class="section-title">Remember</h3>
+    <div class="quote-highlight">
+      <p>Individual privacy protection is important, but it's not enough. Surveillance capitalism is a systemic problem that requires systemic solutions. Keep fighting for legislative change while protecting yourself in the short term.</p>
     </div>
 
   </div>
 
+  <!-- Footer with copyright -->
   <footer>
     <small>
-      <p>2025 project for Cart 211 | Built for educational use</p>
+      <p>© 2025 project for Cart 211 | Built for educational use</p>
     </small>
   </footer>
 
+  <!-- JavaScript for protection meter simulation -->
   <script>
-    // Simulate increasing protection as user scrolls
-    let protection = 15;
+    // Simulate increasing protection as user implements recommendations
+    let protection = 15; // Starting protection level
+    const protectionEl = document.querySelector('.protection-level');
+    
+    // Update protection level on scroll (simulates implementing recommendations)
     window.addEventListener('scroll', function() {
-      const scrollPercent = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
-      protection = Math.min(15 + Math.floor(scrollPercent * 0.65), 80); // Max 80% protection
-      const protectionEl = document.getElementById('protectionLevel');
-      protectionEl.style.width = protection + '%';
-      protectionEl.textContent = protection + '% Protected';
+      // Calculate how far down the page the user has scrolled
+      const scrollPercentage = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+      
+      // Update protection meter based on scroll position
+      protection = Math.min(15 + (scrollPercentage * 0.85), 100); // Max out at 100%
+      
+      if (protectionEl) {
+        protectionEl.style.width = protection + '%';
+        protectionEl.textContent = Math.round(protection) + '% Protected';
+      }
     });
   </script>
 </body>

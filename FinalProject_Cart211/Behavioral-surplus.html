@@ -5,14 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Behavioral Surplus Explained</title>
   <link rel="stylesheet" href="default.css">
+  <!-- Google Fonts: Decorative header font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap" rel="stylesheet">
+  <!-- Font Awesome: Icon library -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+  <!-- Header with site title and navigation -->
   <header>
     <h1>The Age of Surveillance Capitalism</h1>
+    <!-- Navigation menu -->
     <nav>
       <a href="index.html">Home</a>
       <a href="what-it-is.html">What It Is</a>
@@ -24,88 +28,132 @@
       <a href="reclaim-digital-autonomy.html">Reclaim Digital Autonomy</a>
       <a href="ethical-legal.html">Ethical & Legal</a>
       <a href="resources-credits.html">Resources & Credits</a>
-
     </nav>
   </header>
 
+  <!-- Main content container -->
   <div class="container">
+    <!-- Page title -->
     <h2>Behavioral Surplus Explained</h2>
+    
+    <!-- Definition and introduction -->
     <p>Behavioral surplus refers to the extra data that companies collect beyond what is necessary to improve a service. Google discovered that this surplus could be used to predict and shape user behavior — forming the backbone of surveillance capitalism.</p>
+    
+    <!-- Explanation of data collection -->
     <p>Every keystroke, location ping, or voice command becomes part of a hidden feedback loop: collected, analyzed, and sold to advertisers eager to anticipate your next move. The more you interact online, the richer the data supply becomes.</p>
+    
+    <!-- Core concept explanation -->
     <p>Understanding behavioral surplus helps reveal the imbalance of power between users and platforms — a one-way mirror where your life is the content, and the market is always watching.</p>
-  </div>
- <div class="surplus-meter">
-      <div class="necessary-data">NECESSARY</div>
-      <div class="surplus-data">BEHAVIORAL SURPLUS (SOLD)</div>
+    
+    <!-- Visual meter showing the difference between necessary and surplus data -->
+    <!-- Left side (green) shows necessary data, right side (orange/red) shows surplus -->
+    <div class="surplus-meter">
+      <div class="necessary-data">NECESSARY<br>(20%)</div>
+      <div class="surplus-data">BEHAVIORAL SURPLUS (SOLD)<br>(80%)</div>
     </div>
 
+    <!-- Section: Types of data collected -->
+    <h3 class="section-title">What Data Is Considered "Surplus"?</h3>
+
+    <!-- Container showing various types of surplus data -->
     <div class="data-collection">
-      <h3 style="color: #66fcf1; margin-bottom: 20px;">Your Search: "best pizza near me"</h3>
-      <p style="margin-bottom: 20px;"><strong>What they need:</strong> Your search query and general location</p>
-      <p style="margin-bottom: 20px;"><strong>What they actually collect:</strong></p>
-      <div style="text-align: center;">
-        <span class="data-point" style="--delay: 0"> Search terms</span>
-        <span class="data-point" style="--delay: 1"> Exact GPS coordinates</span>
-        <span class="data-point" style="--delay: 2"> Time of search</span>
-        <span class="data-point" style="--delay: 3"> Device type</span>
-        <span class="data-point" style="--delay: 4"> How long you paused</span>
-        <span class="data-point" style="--delay: 5"> Which result you clicked</span>
-        <span class="data-point" style="--delay: 6"> If you came back</span>
-        <span class="data-point" style="--delay: 7"> Where you went after</span>
-        <span class="data-point" style="--delay: 8"> Voice tone (if voice search)</span>
-      </div>
+      <!-- Individual data point badges -->
+      <span class="data-point" style="--delay: 0;">Search queries you deleted</span>
+      <span class="data-point" style="--delay: 1;">Locations you visited</span>
+      <span class="data-point" style="--delay: 2;">Videos you watched</span>
+      <span class="data-point" style="--delay: 3;">Pages you hovered over</span>
+      <span class="data-point" style="--delay: 4;">How long you pause while reading</span>
+      <span class="data-point" style="--delay: 5;">Your facial expressions on camera</span>
+      <span class="data-point" style="--delay: 6;">People you looked at in photos</span>
+      <span class="data-point" style="--delay: 7;">Times you visited certain pages</span>
+      <span class="data-point" style="--delay: 8;">Your typing patterns</span>
+      <span class="data-point" style="--delay: 9;">Your mouse movements</span>
     </div>
 
-    <p>Every keystroke, location ping, or voice command becomes part of a hidden feedback loop: collected, analyzed, and sold to advertisers eager to anticipate your next move. The more you interact online, the richer the data supply becomes.</p>
+    <!-- Section: How surplus is used -->
+    <h3 class="section-title">How Companies Use Behavioral Surplus</h3>
 
-    <h3 style="color: #66fcf1; margin-top: 40px;">Real Examples of Behavioral Surplus</h3>
-
-    <div class="example-toggle">
-      <strong>Example 1: Gmail Scanning</strong>
-      <span class="warning-badge">SOLD TO ADVERTISERS</span>
-    </div>
-    <div class="example-content">
-      <p><strong>What happened:</strong> Google scanned the content of your emails to build a profile of your interests, relationships, and upcoming plans.</p>
-      <p><strong>The surplus:</strong> They didn't just deliver your email — they analyzed every word, contact, and attachment to predict your future behavior and sell targeted ads.</p>
-      <p><strong>Your data = their profit:</strong> Mention a vacation? Get travel ads. Mention a wedding? Get ads for venues, dresses, and rings.</p>
+    <!-- Use case 1: Prediction -->
+    <div class="impact-card">
+      <div class="impact-icon">🔮</div>
+      <h3>Prediction Markets</h3>
+      <p>Your behavioral surplus becomes a "future" — a prediction that you will buy Product X, click on Ad Y, or vote for Candidate Z. These predictions are traded like commodities in markets that are invisible to you.</p>
     </div>
 
-    <div class="example-toggle">
-      <strong>Example 2: Smart Thermostat Learning</strong>
-      <span class="warning-badge">PATTERN PREDICTION</span>
-    </div>
-    <div class="example-content">
-      <p><strong>What happened:</strong> Your Nest thermostat learns when you're home and adjusts temperature accordingly — convenient!</p>
-      <p><strong>The surplus:</strong> It also tracks when you wake up, when you leave for work, when you come home, when you sleep, and when you're on vacation.</p>
-      <p><strong>Who buys this?:</strong> Insurance companies want to know your routines. Advertisers want to know when to send you notifications. This data has been sold to utility companies and third-party data brokers.</p>
+    <!-- Use case 2: Manipulation -->
+    <div class="impact-card">
+      <div class="impact-icon">🎯</div>
+      <h3>Behavioral Modification</h3>
+      <p>Once companies know what you will do, they use surplus data to nudge you toward profitable behaviors. Your feed is algorithmically curated to keep you scrolling longer.</p>
     </div>
 
-    <div class="example-toggle">
-      <strong>Example 3: Facebook "Likes"</strong>
-      <span class="warning-badge">PSYCHOLOGICAL PROFILING</span>
-    </div>
-    <div class="example-content">
-      <p><strong>What happened:</strong> Cambridge Analytica used Facebook likes to build psychological profiles of 87 million users.</p>
-      <p><strong>The surplus:</strong> Your likes on cat photos, political posts, and brands revealed your personality traits, political leanings, intelligence level, and likelihood to be influenced.</p>
-      <p><strong>The impact:</strong> These profiles were used for political micro-targeting in the 2016 US election and Brexit referendum.</p>
+    <!-- Use case 3: Discrimination -->
+    <div class="impact-card">
+      <div class="impact-icon">⚖️</div>
+      <h3>Discriminatory Pricing</h3>
+      <p>Surplus data is used to determine how much to charge you for products, what prices you'll see, and whether you're even shown certain opportunities. The more valuable you are as a target, the higher your price.</p>
     </div>
 
-    <div class="example-toggle">
-      <strong>Example 4: Fitness Tracker Routes</strong>
-      <span class="warning-badge">SECURITY RISK</span>
-    </div>
-    <div class="example-content">
-      <p><strong>What happened:</strong> Strava's heat map feature revealed the locations and patrol routes of military bases in conflict zones.</p>
-      <p><strong>The surplus:</strong> Your jogging route, time, speed, and heart rate are all captured. When aggregated, this revealed secret military installations because soldiers were using fitness trackers.</p>
-      <p><strong>Lesson:</strong> Your "personal" fitness data can expose sensitive locations and patterns you never intended to share.</p>
+    <!-- Section: Real-world example -->
+    <h3 class="section-title">A Real-World Example</h3>
+
+    <!-- Case study card -->
+    <div class="case-study">
+      <span class="case-label">CASE STUDY</span>
+      <h3>Target Predicts Pregnancy</h3>
+      <p>Target's algorithm discovered it could identify pregnant women by tracking their purchases (prenatal vitamins, unscented lotion, large quantities of cotton balls).</p>
+      <p>They sent targeted ads to these women before they even told friends or family they were pregnant. This surplus data about your shopping patterns revealed something deeply personal that you intended to keep private.</p>
+      <p><strong>This is behavioral surplus at work:</strong> Target didn't need this prediction to serve you better. They collected it because it was valuable to sell to other companies (baby product makers, advertisers, insurance companies).</p>
     </div>
 
-    <p style="margin-top: 40px;">Understanding behavioral surplus helps reveal the imbalance of power between users and platforms — a one-way mirror where your life is the content, and the market is always watching.</p>
+    <!-- Section: The hidden economy -->
+    <h3 class="section-title">The Hidden Economy of Surplus</h3>
+
+    <!-- Statistical highlight -->
+    <div class="profit-stat">
+      $227 Billion
+      <span class="stat-label">Annual digital ad market size (largely driven by behavioral surplus)</span>
+    </div>
+
+    <!-- Explanation of the market -->
+    <p>Your behavioral surplus has real financial value. When you don't see prices or ad costs, it's because that market is hidden from you. Companies are buying and selling predictions about your future behavior in markets you don't know exist.</p>
+
+    <!-- Privacy warning -->
+    <div class="privacy-warning">
+      <h3>The Key Insight</h3>
+      <p>Behavioral surplus exists in the gap between what companies need to serve you and what they actually collect. <strong>That gap is profit.</strong></p>
+    </div>
+
+    <!-- Section: How to protect yourself -->
+    <h3 class="section-title">How to Protect Your Surplus</h3>
+
+    <!-- Tool recommendation 1 -->
+    <div class="tool-box">
+      <div class="tool-icon">🧱</div>
+      <h4>Use Ad Blockers</h4>
+      <p>Block third-party trackers and ad networks from collecting your surplus data. Extensions like uBlock Origin and Privacy Badger are free.</p>
+    </div>
+
+    <!-- Tool recommendation 2 -->
+    <div class="tool-box">
+      <div class="tool-icon">🌐</div>
+      <h4>Use a VPN</h4>
+      <p>Hide your IP address and location from trackers. Make it harder for companies to build a complete profile of your behavior.</p>
+    </div>
+
+    <!-- Tool recommendation 3 -->
+    <div class="tool-box">
+      <div class="tool-icon">🔐</div>
+      <h4>Disable Location Services</h4>
+      <p>Turn off GPS location tracking on your phone. Limit location access to only apps that truly need it.</p>
+    </div>
+
   </div>
 
+  <!-- Footer with copyright -->
   <footer>
     <small>
-    <p>2025 project for Cart 211 | Built for educational use</p>
+      <p>© 2025 project for Cart 211 | Built for educational use</p>
     </small>
   </footer>
 </body>
