@@ -1625,17 +1625,3 @@ nav.active {
       font-size: 1.1em;
       line-height: 1.7;
     }
-
-    /* Section Title Styles */
-.section-title {
-  color: #66fcf1;
-  margin-top: 40px;
-}
-
-.section-title-center {
-  text-align: center;
-}
-
-.card-title {
-  color: #66fcf1;
-}
