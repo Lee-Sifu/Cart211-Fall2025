@@ -26,7 +26,7 @@
       <a href="resources-credits.html">Resources & Credits</a>
     </nav>
   </header>
-   <div class="container">
+  <div class="container">
     <h2>Ethical & Legal Issues</h2>
     <p>Surveillance capitalism raises fundamental questions about consent, power, and human rights in the digital age. Laws are starting to catch up, but massive gaps remain.</p>
 
@@ -233,28 +233,37 @@
     let scrollPos = 0;
 
     function autoScroll() {
-      if (scrolling) {
-        scrollPos += 0.5;
-        if (scrollPos >= fakeToS.scrollHeight - fakeToS.clientHeight) {
-          scrollPos = 0;
-        }
+      if (scrolling && fakeToS) {
+        scrollPos += 1;
         fakeToS.scrollTop = scrollPos;
+        if (scrollPos >= fakeToS.scrollHeight - fakeToS.clientHeight) {
+          scrolling = false;
+        }
       }
     }
 
     setInterval(autoScroll, 30);
 
-    fakeToS.addEventListener('mouseenter', () => scrolling = false);
-    fakeToS.addEventListener('mouseleave', () => scrolling = true);
+    if (fakeToS) {
+      fakeToS.addEventListener('mouseenter', () => scrolling = false);
+      fakeToS.addEventListener('mouseleave', () => scrolling = true);
+    }
 
     // Make buttons interactive
-    document.querySelector('.btn-accept').addEventListener('click', function() {
-      alert('Congratulations! You just agreed to give away all your data, privacy, and digital rights. (This is satire, but it happens for real every day.)');
-    });
+    const btnAccept = document.querySelector('.btn-accept');
+    const btnDecline = document.querySelector('.btn-decline');
 
-    document.querySelector('.btn-decline').addEventListener('click', function() {
-      alert('Access Denied: You must accept our terms to use this service. (This is why "consent" is an illusion.)');
-    });
+    if (btnAccept) {
+      btnAccept.addEventListener('click', function() {
+        alert('Congratulations! You just agreed to give away all your data, privacy, and digital rights. (This is satire, but it happens for real every day.)');
+      });
+    }
+
+    if (btnDecline) {
+      btnDecline.addEventListener('click', function() {
+        alert('Access Denied: You must accept our terms to use this service. (This is why "consent" is an illusion.)');
+      });
+    }
   </script>
 </body>
 </html>

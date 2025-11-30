@@ -30,129 +30,16 @@
     <h2>How They Track You</h2>
     <p>Every moment online, invisible systems are collecting data about your behavior. Here are the primary methods used to surveil your digital life.</p>
 
-    <h3 style="color: #66fcf1; margin-top: 40px;">The Tracking Methods (Hover to Reveal)</h3>
+    <h3 class="section-title">The Tracking Methods (Hover to Reveal)</h3>
 
-   <div class="tracking-card">
+    <div class="tracking-card">
       <div class="tracking-icon">🍪</div>
-      <h3 style="color: #66fcf1;">Cookies & Third-Party Trackers</h3>
-      <p><strong>How it works:</strong> Small text files stored in your browser follow you across websites. Third-party cookies let advertisers track your journey across the entire web.</p>
-      <p><strong>Example:</strong> You look at shoes on one site, then see shoe ads everywhere else you go online. That's third-party tracking.</p>
-      <p><strong>Scale:</strong> The average webpage contains 10-40 third-party trackers. Popular sites can have 100+.</p>
+      <h3 class="card-title">Cookies & Third-Party Trackers</h3>
     </div>
-
-    <div class="tracking-card">
-      <div class="tracking-icon">🖐️</div>
-      <h3 style="color: #66fcf1;">Device Fingerprinting</h3>
-      <p><strong>How it works:</strong> Your browser, screen resolution, installed fonts, timezone, language, and hardware create a unique "fingerprint" — even without cookies.</p>
-      <p><strong>Example:</strong> Even in "incognito mode," your device can be uniquely identified 99% of the time based on these characteristics.</p>
-      <p><strong>Why it matters:</strong> You can't delete your fingerprint like you can delete cookies.</p>
-    </div>
-
-    <div class="fingerprint-demo">
-      <h3 style="color: #fc9966; margin-bottom: 10px;">Your Device Fingerprint Right Now:</h3>
-      <p style="font-size: 0.9em; color: #c5c6c7; margin-bottom: 20px;">This is what trackers see about your device:</p>
-      <div class="fingerprint-data">
-        <div class="fp-item">
-          <span class="fp-label">Browser:</span>
-          <span id="browser">Loading...</span>
-        </div>
-        <div class="fp-item">
-          <span class="fp-label">Screen Resolution:</span>
-          <span id="resolution">Loading...</span>
-        </div>
-        <div class="fp-item">
-          <span class="fp-label">Timezone:</span>
-          <span id="timezone">Loading...</span>
-        </div>
-        <div class="fp-item">
-          <span class="fp-label">Language:</span>
-          <span id="language">Loading...</span>
-        </div>
-        <div class="fp-item">
-          <span class="fp-label">Platform:</span>
-          <span id="platform">Loading...</span>
-        </div>
-        <div class="fp-item">
-          <span class="fp-label">Color Depth:</span>
-          <span id="colorDepth">Loading...</span>
-        </div>
-      </div>
-      <p style="margin-top: 20px; font-size: 0.85em; color: #fc9966;"><strong>Uniqueness:</strong> These attributes combined make you identifiable across websites, even without cookies.</p>
-    </div>
-
-    <div class="tracking-card">
-      <div class="tracking-icon">📍</div>
-      <h3 style="color: #66fcf1;">Location Tracking</h3>
-      <p><strong>How it works:</strong> GPS, WiFi networks, cell towers, and Bluetooth beacons constantly pinpoint your location — often even when you've disabled location services.</p>
-      <p><strong>Example:</strong> Google tracks Android users even with location history turned off. They were fined $391 million for this in 2022.</p>
-      <p><strong>Who buys it:</strong> Retailers, insurance companies, hedge funds, and political campaigns all purchase location data to track your movements.</p>
-    </div>
-
-    <div class="tracking-card">
-      <div class="tracking-icon">📱</div>
-      <h3 style="color: #66fcf1;">Social Media Pixels</h3>
-      <p><strong>How it works:</strong> Facebook, Twitter, and other platforms embed invisible tracking pixels on millions of websites. They track you even if you don't have an account.</p>
-      <p><strong>Example:</strong> The Facebook pixel is on over 8.4 million websites. Every time you visit one, Facebook knows — and builds a "shadow profile" even if you never signed up.</p>
-      <p><strong>Data collected:</strong> Pages visited, products viewed, time spent, purchase behavior, and more.</p>
-    </div>
-
-    <div class="tracking-card">
-      <div class="tracking-icon">📧</div>
-      <h3 style="color: #66fcf1;">Email Tracking Pixels</h3>
-      <p><strong>How it works:</strong> Invisible 1x1 pixel images in emails report back when you open them, where you are, what device you use, and how many times you read it.</p>
-      <p><strong>Example:</strong> 70% of marketing emails contain tracking pixels. Many regular emails do too.</p>
-      <p><strong>What they learn:</strong> When you're most active, if you're traveling, your typical routine, and which messages get your attention.</p>
-    </div>
-
-    <div class="tracking-card">
-      <div class="tracking-icon">🏠</div>
-      <h3 style="color: #66fcf1;">Smart Home Devices</h3>
-      <p><strong>How it works:</strong> Alexa, Google Home, smart TVs, and IoT devices constantly listen and watch, sending data back to servers.</p>
-      <p><strong>Example:</strong> Amazon employees listened to thousands of Alexa recordings. Smart TVs track everything you watch and sell that data to advertisers.</p>
-      <p><strong>Scale:</strong> Samsung's privacy policy states: "Please be aware that if your spoken words include personal information, that information will be captured and transmitted to a third party."</p>
-    </div>
-
-    <h3 style="color: #66fcf1; margin-top: 50px;">Who's Watching You Right Now?</h3>
-    <p style="margin-bottom: 20px;">On a typical website visit, here's the network tracking your every move:</p>
-
-    <div class="tracking-network">
-      <div class="you-node tracker-node">🙋 YOU</div>
-      <div class="tracker-node" style="--delay: 1">
-        <div>📊</div>
-        <strong>Google Analytics</strong>
-      </div>
-      <div class="tracker-node" style="--delay: 2">
-        <div>👤</div>
-        <strong>Facebook Pixel</strong>
-      </div>
-      <div class="tracker-node" style="--delay: 3">
-        <div>💰</div>
-        <strong>Ad Networks</strong>
-      </div>
-      <div class="tracker-node" style="--delay: 4">
-        <div>🎯</div>
-        <strong>Marketing Tools</strong>
-      </div>
-      <div class="tracker-node" style="--delay: 5">
-        <div>📈</div>
-        <strong>Data Brokers</strong>
-      </div>
-      <div class="tracker-node" style="--delay: 6">
-        <div>🔍</div>
-        <strong>Trackers (10-40+)</strong>
-      </div>
-    </div>
-
-    <div class="privacy-warning">
-      <h3>⚠️ Even "Private" Browsing Isn't Private</h3>
-      <p>Incognito mode only hides your browsing from other people using your device. It does NOT stop:</p>
-      <ul style="margin-top: 15px; line-height: 1.8;">
-        <li>Your internet service provider from seeing your activity</li>
-        <li>Websites from tracking you via device fingerprinting</li>
-        <li>Your employer or school from monitoring your connection</li>
-        <li>Websites from using other tracking methods besides cookies</li>
-      </ul>
-      <p style="margin-top: 20px; color: #fc9966;"><strong>Bottom line:</strong> You're never truly invisible online unless you take specific privacy measures.</p>
-    </div>
-
   </div>
+
+  <footer>
+    <small></small>
+  </footer>
+</body>
+</html>
