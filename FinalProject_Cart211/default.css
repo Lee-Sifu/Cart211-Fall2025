@@ -931,13 +931,9 @@ footer a {
 }
 
 .company-card {
-  width: 100px;
+  max-width: 200px;
   height: auto;
-  display: center;
+  display: block;
   text-align: center; 
   margin: 15px 0;
 }
-
-/* ============================================
-   END OF CSS
-   ============================================ */
