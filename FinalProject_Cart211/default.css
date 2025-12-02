@@ -814,8 +814,8 @@ footer a {
 }
 .protection-meter {
   flex-shrink: 0;
-   width: 30px;
-  height: 400px; /* Adjust height as needed */
+  width: 30px;
+  height: 3000px; /* Adjust height as needed */
   background: #1f2833;
   border-radius: 15px;
   overflow: hidden;
