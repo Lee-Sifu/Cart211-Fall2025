@@ -10,6 +10,6 @@ I went with a simple aethetics with the main colors being black, cyan and white 
 
 files, I used all the lessons and resources I learned as well as some previous knowledge before taking Cart 211. With a bit of 
 
-javascript for that 
+javascript for that interactive functionality. If I had a bit more time or wasn't feeling that burned I would probably added more 
 
-interactive functionality. 
+javascript feautures like p5.js from Cart 253.
